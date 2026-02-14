@@ -6,10 +6,11 @@ test('Practice Software Testing',async ({page})=>
     console.log(await page.title());
     await expect(page).toHaveTitle("Practice Software Testing - Toolshop - v5.0");
     await page.locator('a[href="/auth/login"]').click();
-    await page.locator('#email').fill("customer@practicesoftwaretesting.com");
-    await page.locator('#password').fill("welcome01");
+    await page.locator('#email').fill("test@gmail.com");
+    await page.locator('#password').fill("Welcomemancode01!");
     await page.locator('[data-test="login-submit"]').click();
-    await expect(page.locator('#menu')).toHaveText('Jane Doe'); // Verify logged-in user
+    await expect(page.locator('#menu')).toHaveText('Jay Zayn', {timeout: 30000}); // Verify logged-in user
 
 }); 
+
 

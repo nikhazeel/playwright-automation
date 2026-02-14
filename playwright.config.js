@@ -17,7 +17,7 @@ const config = ({
     browserName: 'chromium',
     headless: false,
     screenshot: 'on',
-    trace: 'on', //off,on https://trace.playwright.dev/
+    trace: 'off', //off,on https://trace.playwright.dev/
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
 
   },
